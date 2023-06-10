@@ -10,7 +10,7 @@ function Navbar() {
 
     <div> Accueil</div>
 
-    <div> A Propos</div>
+    <div>A Propos</div>
 
     
     </nav>

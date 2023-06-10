@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
-    color:#ff6060;
+    color: var(--red)
 
 }
 
