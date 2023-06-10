@@ -8,11 +8,25 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
-    color: var(--red)
+ 
+ 
+    text-decoration: none;
+    color: white;
+ 
 
 }
 
 
 .navbar__logo{
     margin-right: auto;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--red);
+    
+}
+
+.navbar a:hover{
+    text-decoration: underline;
 }

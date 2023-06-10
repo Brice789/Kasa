@@ -7,5 +7,6 @@
     display: grid;
     text-align: center;
     place-items: center;
+    margin-top: 3rem;
 }
 
