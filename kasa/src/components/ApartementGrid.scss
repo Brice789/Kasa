@@ -1,0 +1,23 @@
+@use "../sass/variables.scss" as *;
+
+.grid{
+  
+    background-color: rgba(0, 0, 0, 0.24);
+    margin-top: 3rem;
+    border-radius: 2em;
+    display: flex;
+    /* min-height: 10rem; */
+    flex-wrap: wrap;
+    gap:1rem;   
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+@media screen and (width <= 768px) { 
+    .grid{
+        justify-content : center;
+        background-color: white;
+        padding: 0;
+    }
+    
+}

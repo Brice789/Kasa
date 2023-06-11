@@ -1,0 +1,48 @@
+@use "../sass/variables.scss" as *;
+
+
+.navbar{
+    display: flex;
+    gap: 2rem;
+    align-items:center ;
+    padding: 0 2rem;
+    margin-right: 20%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+ 
+ 
+    text-decoration: none;
+    color: white;
+ 
+
+    & a{
+        text-decoration: none;
+        color: var(--red);
+        
+    }
+
+    & a:hover{
+        text-decoration: underline;
+    }
+
+
+    *:first-child{
+        margin-right: auto;
+  }
+
+
+}
+
+// .navbar 
+
+// .navbar 
+
+// .navbar *:first-child{
+//     margin-right: auto;
+// }
+
+/* .navbar__logo{
+    margin-right: auto;
+} */
