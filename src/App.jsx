@@ -2,10 +2,10 @@ import React from 'react';
 import "./App.css";
 
 import Navbar from "./components/Navbar.jsx" ;
-import Banner from "./components/Banner.jsx" ;
+import Banner from "./layout/Banner.jsx" ;
 import ApartementGrid from "./components/ApartementGrid.jsx";
-import Main2 from "./components/Main2.jsx";
-import Footer from "./components/Footer.jsx";
+import Main2 from "./layout/Main2.jsx";
+import Footer from "./layout/Footer.jsx";
 
 function App() {
   return (
