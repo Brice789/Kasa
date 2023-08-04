@@ -16,6 +16,7 @@ function App() {
       <Main2>
 
         <Banner/>
+        
         <ApartementGrid />
 
       </Main2>

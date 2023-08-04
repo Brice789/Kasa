@@ -16,7 +16,7 @@ import Footer from './layout/Footer.jsx';
 //   <Footer/>
 //   </>
 //   );
-// };
+// };<h1> Nos Apparements</h1>
 
 export const router = createBrowserRouter([
   {
@@ -26,11 +26,23 @@ export const router = createBrowserRouter([
   },
   {
    path:"/flat" ,
-   element: <h1> Nos Apparements</h1>
+   element:  (
+    <>
+    < Navbar/>
+    <h1> Nos Apparements</h1>
+    <Footer />
+  </>
+  ),
   },
   {
     path:"/about" ,
-    element:  <h1> A Propos</h1>,
+    element:  (
+      <>
+      < Navbar/>
+    <h1> A Propos</h1>
+      <Footer />
+    </>
+    ),
    },
 ])
 
