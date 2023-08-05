@@ -1,4 +1,9 @@
-![Picture](https://github.com/Brice789/Kasa/blob/master/public/logo.png)
+Projet kasa
 
-# Projet 7
-## Formation OpenClassrooms: Développeur Web
+
+To start it 
+
+npm install
+
+npm run dev
+
