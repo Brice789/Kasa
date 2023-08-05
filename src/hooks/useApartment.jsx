@@ -7,7 +7,7 @@ export function useApartment() {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch("db.json", { signal: abortController.signal })
+    fetch("database.json", { signal: abortController.signal })
       .then((res) => res.json())
       .then((flats) => {
         const flat = flats.find((flat) => flat.id === location.state.apartmentId);

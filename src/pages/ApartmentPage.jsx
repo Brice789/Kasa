@@ -13,10 +13,13 @@ function ApartmentPage() {
 
 
   <div className="apart">
-    {/* <h1>Les appartements</h1> */}
     <div className="img">
       <img src = "https://picsum.photos/1100/400"  alt = "image" /> 
     </div>
+
+    <div className="apartment-head">
+
+    
     <div className="apartment-page-title" >
       <h1>Crazy loft on the canal saint martin</h1>
       <h2>Paris, Ile de France</h2>
@@ -25,12 +28,14 @@ function ApartmentPage() {
             <p className="apart-tag">Canak</p>
             <p className="apart-tag">Paris 16</p>
           </div>
+    </div>
 
-        </div>
 
     <div className="apartment-owner">
+      <div className="apartment-owner-details">
       <h3>Alexandre Dumas</h3>
       <div className="apartement-owner-badge"></div>
+      </div>
           <div className="apartment-owner-star">
             <span>✰</span>
             <span>✰</span>
@@ -40,18 +45,19 @@ function ApartmentPage() {
           </div>
     </div>
 
+    </div>
   
     <div className="apartment-description">
-      <p>Description</p>
-      <p>
+      <p className="description-title">Description</p>
+      <p className="description-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
         tempore? Iure quo ab eius optio, vitae culpa ipsum, unde consectetur 
         obcaecati eum molestiae officiis quis fuga labore. Nam, alias vel.</p>
     </div>
 
     <div className="apartment-description">
-      <p>Description</p>
-      <p>
+    <p className="description-title">Description</p>
+      <p className="description-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
         tempore? Iure quo ab eius optio, vitae culpa ipsum, unde consectetur 
         obcaecati eum molestiae officiis quis fuga labore. Nam, alias vel.</p>

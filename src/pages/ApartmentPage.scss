@@ -1,24 +1,17 @@
 @use "../sass/variables.scss" as *;
 
-.apartment-page {
-  color: $color-primary;
-  .apartment__description__area {
-    display: flex;
-    gap: 1rem;
-    overflow: hidden;
-    @media screen and (width <= 768px) {
-      flex-direction: column;
-    }
-  }
-}
-
 
 .apart{
   color: $color-primary;
   margin-top: 3rem;
+  div:first-child
+  {
+    margin-bottom: 1rem;
+  }
   h1{
+    margin-block: 0;
     font-weight: 700 ;
-    font-size: 3.5rem;
+    font-size: 2.1rem;
   }
   h2{
      font-size: 2.5rem;
@@ -32,14 +25,95 @@
     .apart-tag{
       background-color: $color-primary;
       color: white;
-      font: 1em sans-serif;
+      font: 1rem sans-serif;
       padding: 0.3rem 0.5rem 0.3rem 0.5rem;
       border-radius: 1rem;
       grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     }
   }
+
+
+
+  .apartment-head
+  {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    @media screen and (width <= 768px) {
+    flex-direction: column;
+    }
+
+    .apartment-page-title
+    {
+      flex-grow: 1;
+    }
+
+    .apartment-owner-detail
+    {
+      display: flex;
+    }
+
+
+   .apartment-owner-badge .apartment-owner-star
+   {
+    border: 3px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   }
+
+
+    .apartment-owner-badge img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $background-dark;
+    }
+
+    .apartment-owner{
+      display: flex;
+      flex-direction: column;
+      @media screen and (width <= 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      margin-block: 0;
+      margin-left: auto;
+      h3{
+        margin-block: 0;
+      }
+
+
+
+      .apartment-owner-details
+       {
+        display: flex;
+        gap: 0.5rem;
+          @media screen and (width <= 768px) {
+            order: 1;
+            }
+       }
+
+
+    .apartment-owner-star{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: $background-dark;
+    * {
+      font-size: 2rem;
+    }
+    .on {
+      color: $color-primary;
+    }
+    }
+
+  }
+
+
 }
- 
+
 
 
 .apart .img img{
@@ -49,4 +123,88 @@
   border-radius: 1rem;
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   filter: brightness(0.8);
+}
+}
+ 
+.apart .apartment-head .apartment-owner-badge{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: $background-dark;
+}
+
+.apartment-description{
+  .description-title{
+    background-color: $color-primary;
+    color: $color-tertiary;
+    padding-block: 0.7rem 1rem;
+    border-radius: 0.7rem;
+    margin-block: 0;
+    text-indent: 1rem;
+
+  }
+  .description-content
+  {
+    margin-block: 0;
+    background-color: $background-light;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.apartment__header {
+  .apartment__owner__badge img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $background-dark;
+  }
+  
+  
+  h1 {
+    font-weight: 400;
+    margin-block: 0;
+  }
+  h2 {
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    font-size: 20px;
+  }
+
+  .apartment__tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    gap: 1rem;
+    span {
+      background-color: $color-primary;
+      color: $color-tertiary;
+      padding: 0.3em 0.5em;
+      border-radius: 0.7rem;
+      text-align: center;
+    }
+  }
+  h3 {
+    margin-block: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-weight: 400;
+  }
 }
