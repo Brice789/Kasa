@@ -1,9 +1,17 @@
-Projet kasa
+![Picture](https://github.com/Brice789/Kasa/blob/master/src/assets/logo.png)
 
+# Projet 7
+## Formation OpenClassrooms: Développeur Web
 
-To start it 
+```css
+Le projet Kasa, est un projet de location de logements entre particuliers fait en React
+```
 
-npm install
+# Pour le faire fonctionner, vous devez entrez 2 informations en ligne de commandes 
 
-npm run dev
+# npm install
+
+# npm run dev
+
+La base de données est déja incluse.
 
