@@ -4,9 +4,10 @@ import HomePage from "../pages/Homepage";
 import Footer from "../layout/Footer";
 import Main from "../layout/Main";
 import Navbar from "../components/Navbar";
-import ApartmentPage from "../pages/ApartmentPage";
 import About from "../pages/About";
-import { ErrorPageNotFound } from "../pages/ErrorPageNotFound";
+import ErrorPage  from "../pages/ErrorPage";
+import ApartmentPage from "../pages/ApartmentPage";
+
 
 const HeaderFooterLayout = () => {
   return (
@@ -23,7 +24,7 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <ErrorPageNotFound />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

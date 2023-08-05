@@ -1,8 +1,8 @@
 import React from 'react';
-import "./ApartementGrid.scss";
-import Apartement from "./Apartement.jsx"
+import "./ApartmentGrid.scss";
+import Apartement from "./Apartment.jsx"
 
-function ApartementGrid() {
+function ApartmentGrid() {
   return (
     <div className="grid">
 
@@ -10,10 +10,9 @@ function ApartementGrid() {
     <Apartement/>
     <Apartement/>
     <Apartement/>
-   
     
     </div>
   );
 }
 
-export default ApartementGrid;
+export default ApartmentGrid;

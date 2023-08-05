@@ -2,31 +2,27 @@
 
 
 .navbar{
+
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     align-items:center ;
     padding: 0 2rem;
-    margin-right: 20%;
+    margin-right: 15%;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-
- 
- 
+    font-size: 21px;
     text-decoration: none;
-    color: white;
- 
+    
 
     & a{
         text-decoration: none;
-        color: var(--red);
-        
+        color: $color-primary;
     }
 
     & a:hover{
         text-decoration: underline;
     }
-
 
     *:first-child{
         margin-right: auto;
@@ -35,14 +31,3 @@
 
 }
 
-// .navbar 
-
-// .navbar 
-
-// .navbar *:first-child{
-//     margin-right: auto;
-// }
-
-/* .navbar__logo{
-    margin-right: auto;
-} */

@@ -11,15 +11,12 @@ function Navbar() {
     <img src = "logo.png" alt = "Logo"></img>
     </div>
     </NavLink>
-    
     <NavLink to ="/"   >
     <div>Accueil</div>
     </NavLink>
-
     <NavLink to ="/about">
     <div>A Propos</div>
     </NavLink>
-  
     </nav>
 
   )

@@ -1,10 +1,11 @@
 import React from 'react'
-import "./Apartement.scss"
+import "./Apartment.scss"
 import { Link } from 'react-router-dom'
 
-function Apartement() {
+function Apartment() {
   return (
-    <div className='apartement'>
+    <div className='apartment'>
+
     <Link to ="/flat">
     <div className = "apartement__subtitle">Titre de la location </div>
     </Link>
@@ -13,4 +14,4 @@ function Apartement() {
   )
 }
 
-export default Apartement
+export default Apartment
