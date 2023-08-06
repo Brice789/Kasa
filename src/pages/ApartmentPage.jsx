@@ -48,7 +48,10 @@ function ApartmentPage() {
     </div>
   
     <div className="apartment-description">
-      <p className="description-title">Description</p>
+      <p className="description-title">
+        <span>Description</span>
+      <i className="fa-solid fa-chevron-down"></i>
+      </p>
       <p className="description-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
         tempore? Iure quo ab eius optio, vitae culpa ipsum, unde consectetur 

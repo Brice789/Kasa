@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 
 function Apartment() {
   return (
-    <div className='apartment'>
-
     <Link to ="/flat">
+    <div className='apartment'>
+    <img src = "https://picsum.photos/300/200" alt = "titre de l'image"></img>
     <div className = "apartement__subtitle">Titre de la location </div>
-    </Link>
     
+   
     </div>
+    </Link>
   )
 }
 
