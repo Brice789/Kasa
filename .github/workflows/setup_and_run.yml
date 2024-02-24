@@ -1,0 +1,35 @@
+name: Setup and Run Kasa Project
+
+# Triggers the workflow on push or pull request events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# Defines the jobs to be run
+jobs:
+  setup_and_run:
+    # Specifies the type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # A sequence of commands or tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        # Uses version 14 of Node.js
+
+    - name: Install dependencies
+      run: npm install
+      # Runs `npm install` to install the project dependencies
+
+    - name: Run development server
+      run: npm run dev
+      # Starts the project using `npm run dev`
+      # Note: Running `npm run dev` in GitHub Actions will start the development server, which may hang indefinitely as the server stays open. 
+      # Consider using a build command for deployment purposes.
